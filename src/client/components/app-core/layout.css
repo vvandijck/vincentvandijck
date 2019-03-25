@@ -1,0 +1,54 @@
+* {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  color: var(--color-eerie-black);
+  font-family: var(--font-alt-light);
+  font-size: 1rem;
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 720px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-double);
+}

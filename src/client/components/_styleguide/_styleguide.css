@@ -1,0 +1,35 @@
+.styleguide__tiles {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, minmax(150px, 225px));
+  margin-bottom: 48px;
+}
+
+.styleguide__tile {
+  display: block;
+}
+
+.styleguide__tile-color {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ececec;
+}
+
+.styleguide__tile-name {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.preview-name {
+  margin: 32px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ececec;
+  color: var(--color-bayoux);
+  font-family: var(--font-alt-medium);
+}
+
+.preview-name:first-of-type {
+  margin: 0 0 16px;
+}
