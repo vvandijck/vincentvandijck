@@ -30,6 +30,7 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "node-fetch": "2.3.0",
     "nuxt": "2.5.1"
   },
   "devDependencies": {
