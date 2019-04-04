@@ -19,6 +19,6 @@
   }
 </script>
 
-<style scoped>
+<style>
   @import '../components/app-core/index.css';
 </style>

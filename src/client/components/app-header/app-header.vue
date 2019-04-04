@@ -27,7 +27,9 @@
   }
 </script>
 
-<style scoped>
+<style>
+  @import '../app-core/variables.css';
+
   .app-header {
     flex: 0 1 auto;
     background: linear-gradient(to right, var(--color-gum-leaf), var(--color-bayoux));

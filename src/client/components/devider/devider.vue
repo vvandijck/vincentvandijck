@@ -19,6 +19,8 @@
 </script>
 
 <style>
+  @import '../app-core/variables.css';
+
   .devider__image {
     display: block;
     width: 100%;

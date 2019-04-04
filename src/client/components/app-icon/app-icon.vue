@@ -24,7 +24,9 @@
   }
 </script>
 
-<style scoped>
+<style>
+  @import '../app-core/variables.css';
+
   .app-icon {
     width: 1em;
     height: 1em;

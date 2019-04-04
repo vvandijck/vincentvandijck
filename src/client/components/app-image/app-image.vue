@@ -31,7 +31,9 @@
   }
 </script>
 
-<style scoped>
+<style>
+  @import '../app-core/variables.css';
+
   .app-image {
     display: inline-block;
     height: 100%;

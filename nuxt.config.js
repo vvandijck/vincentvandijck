@@ -104,9 +104,13 @@ module.exports = {
   ],
 
   build: {
-    postcss: [
-      require('postcss-custom-properties')()
-    ],
+    postcss: {
+      'postcss-import': {},
+      'postcss-custom-properties': {
+        preserve: false,
+      },
+      'autoprefixer': {},
+    },
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

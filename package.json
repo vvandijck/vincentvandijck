@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/vvandijck/vincentvandijck"
   },
+  "browserslist": [
+    "last 2 versions",
+    "ie 11"
+  ],
   "private": true,
   "scripts": {
     "build": "NODE_ENV=production run-s build:*",
@@ -35,6 +39,8 @@
     "@storybook/addon-knobs": "5.0.5",
     "@storybook/addons": "5.0.5",
     "@storybook/vue": "5.0.5",
+    "autoprefixer": "9.0.1",
+    "autoprefixer": "9.5.0",
     "babel-eslint": "10.0.1",
     "babel-preset-vue": "2.0.2",
     "commander": "2.19.0",
@@ -44,7 +50,8 @@
     "eslint-plugin-vue": "5.2.2",
     "lodash": "4.17.11",
     "npm-run-all": "4.1.5",
-    "postcss-custom-properties": "8.0.9",
+    "postcss-custom-properties": "8.0.10",
+    "postcss-import": "12.0.1",
     "storybook-readme": "5.0.1",
     "stylelint": "9.10.1",
     "stylelint-config-standard": "18.2.0",
