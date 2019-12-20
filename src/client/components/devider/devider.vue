@@ -21,6 +21,10 @@
 <style>
   @import '../app-core/variables.css';
 
+  .devider {
+    margin: 0 0 -1px;
+  }
+
   .devider__image {
     display: block;
     width: 100%;
