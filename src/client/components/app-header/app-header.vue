@@ -93,4 +93,8 @@
     color: var(--color-white);
     font-family: var(--font-alt-medium);
   }
+
+  .app-header__link .nuxt-link-active {
+    text-decoration: underline;
+  }
 </style>
