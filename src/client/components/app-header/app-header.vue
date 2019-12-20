@@ -39,9 +39,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--spacing-double);
+    padding: var(--spacing-default);
     max-width: var(--content-max-width);
     margin: 0 auto;
+  }
+
+  @media (min-width: 720px) {
+    .app-header__content {
+      padding: var(--spacing-double);
+    }
   }
 
   .app-header__logo {

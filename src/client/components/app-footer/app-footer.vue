@@ -28,7 +28,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-double);
+    padding: var(--spacing-default);
+  }
+
+  @media (min-width: 720px) {
+    .app-footer__content {
+      padding: var(--spacing-double);
+    }
   }
 
   .app-footer__copyright {
