@@ -15,13 +15,13 @@
         required: true,
       },
     },
+    mounted() {
+      this.$parent.$el.classList.add('loaded')
+    },
     head() {
       return {
         title: `${this.error.statusCode} - An error occurred | Vincent van Dijck`,
       }
-    },
-    mounted() {
-      this.$parent.$el.classList.add('loaded')
     },
   }
 </script>
