@@ -22,7 +22,7 @@
   @import '../app-core/variables.css';
 
   .devider {
-    margin: 0 0 -1px;
+    margin: -1px 0;
   }
 
   .devider__image {
