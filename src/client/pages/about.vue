@@ -1,6 +1,6 @@
 <template>
   <main class="page page--about" role="main">
-    <h1>Coming soon..</h1>
+    <h1>This is coming soon..</h1>
   </main>
 </template>
 
