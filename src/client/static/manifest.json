@@ -1,48 +1,42 @@
 {
-  "default_locale": "en",
-  "name": "Vincent van Dijck",
-  "short_name": "V. van Dijck",
-  "description": "Front-end Developer & Web development enthousiast",
-  "start_url": "https://vincentvandijck.nl/",
-  "version": "1.0.0",
+  "name": "vincentvandijck.nl",
+  "short_name": "vincentvandijck.nl",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/android-36x36.png?v=M4yLqMQR2q",
+      "src": "/android-36x36.png",
       "sizes": "36x36",
       "type": "image/png"
     },
     {
-      "src": "/android-48x48.png?v=M4yLqMQR2q",
+      "src": "/android-48x48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/android-72x72.png?v=M4yLqMQR2q",
+      "src": "/android-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/android-96x96.png?v=M4yLqMQR2q",
+      "src": "/android-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/android-144x144.png?v=M4yLqMQR2q",
+      "src": "/android-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/android-192x192.png?v=M4yLqMQR2q",
+      "src": "/android-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
-  "dir": "ltr",
-  "serviceworker": {
-    "src": "sw.js"
-  }
+  "dir": "ltr"
 }
