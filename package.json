@@ -38,7 +38,7 @@
     "@babel/core": "7.7.5",
     "@babel/preset-env": "7.7.6",
     "@storybook/addon-actions": "5.3.7",
-    "@storybook/addon-knobs": "5.2.8",
+    "@storybook/addon-knobs": "5.3.7",
     "@storybook/addons": "5.3.6",
     "@storybook/vue": "5.2.8",
     "autoprefixer": "9.7.3",
