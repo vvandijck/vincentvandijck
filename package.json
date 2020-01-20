@@ -35,7 +35,7 @@
     "vue": "2.6.11"
   },
   "devDependencies": {
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.8.3",
     "@babel/preset-env": "7.7.6",
     "@storybook/addon-actions": "5.3.7",
     "@storybook/addon-knobs": "5.3.7",
