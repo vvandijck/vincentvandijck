@@ -12,7 +12,7 @@ end_of_line = lf
 insert_final_newline = true
 
 # Indentation
-indent_style = space
+indent_style = tab
 indent_size = 2
 trim_trailing_whitespace = true
 
@@ -22,10 +22,10 @@ trim_trailing_whitespace = false
 
 # YAML & JSON prefer 2 spaces
 [*.{yml,json}]
-indent_style = space
+indent_style = tab
 indent_size = 2
 
 # Lint settings are in JSON, so
 [.eslintrc]
-indent_style = space
+indent_style = tab
 indent_size = 2

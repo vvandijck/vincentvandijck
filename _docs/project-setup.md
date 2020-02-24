@@ -1,3 +1,0 @@
-# Project setup
-
-# Browser scope

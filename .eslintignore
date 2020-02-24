@@ -1,8 +1,0 @@
-# directories #
-/dist
-/_scripts
-/config
-/.nuxt
-
-# files #
-nuxt.config.js

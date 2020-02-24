@@ -1,18 +1,4 @@
-# dependencies
 node_modules
-
-# project meta
-.idea
-.settings
-
-# npm
-npm-debug.log
-
-# Nuxt build
-.nuxt
-
-# Nuxt generate
-dist
-
-# MacOS
-.DS_Store
+.next
+.env
+yarn-error.log
