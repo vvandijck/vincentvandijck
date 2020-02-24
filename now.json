@@ -1,17 +1,17 @@
 {
-	"version": 1,
-	"name": "vvandijck",
+	"version": 2,
+	"name": "vincentvandijck",
 	"scope": "vvandijck",
 	"trailingSlash": false,
 	"github": {
 		"silent": true
 	},
 	"env": {
-		"API_KEY": "@api-key"
+		"API_KEY": "@api_key"
 	},
 	"build": {
 		"env": {
-			"API_KEY": "@api-key"
+			"API_KEY": "@api_key"
 		}
 	}
 }
