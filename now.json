@@ -1,17 +1,13 @@
 {
 	"version": 2,
-	"name": "vincentvandijck",
 	"scope": "vvandijck",
 	"trailingSlash": false,
 	"github": {
 		"silent": true
 	},
-	"env": {
-		"API_KEY": "@api_key"
-	},
 	"build": {
 		"env": {
-			"API_KEY": "@api_key"
+			"NEXT_API_KEY": "@vincentvandijck-dato-api-key"
 		}
 	}
 }

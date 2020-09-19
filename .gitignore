@@ -1,6 +1,8 @@
+public/sw.*
+public/workbox-*
 node_modules
 .next
+.vercel
+.now
 .env
 yarn-error.log
-
-.now
