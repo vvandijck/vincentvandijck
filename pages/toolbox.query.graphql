@@ -1,0 +1,11 @@
+query Toolbox {
+	toolbox {
+		id
+		seo {
+			description
+			title
+			twitterCard
+		}
+		title
+	}
+}

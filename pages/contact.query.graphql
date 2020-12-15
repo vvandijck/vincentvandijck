@@ -1,0 +1,11 @@
+query Contact {
+	contact {
+		id
+		seo {
+			description
+			title
+			twitterCard
+		}
+		title
+	}
+}

@@ -1,9 +1,14 @@
+// Styles
 import '../styles/index.less'
 
 // Core
 import Head from 'next/head'
+
+// Content
+import graphqlQuery from './_error.query.graphql'
+
+// Lib
 import fetchContent from '../lib/fetch-content'
-import withCacheControl from '../lib/with-cache-control'
 
 // Components
 import Footer from '../components/footer/footer'
@@ -23,20 +28,10 @@ const Error = ({ error }) => (
 	</React.Fragment>
 )
 
-Error.getInitialProps = withCacheControl(({ req }) => {
-	const graphqlQuery = `{
-		error {
-			id
-			seo {
-				description
-				title
-				twitterCard
-			}
-			title
-		}
-	}`
-
-	return fetchContent({ graphqlQuery, req })
-})
+Error.getInitialProps = async () => {
+	return await fetchContent({ query: graphqlQuery }).then(data => ({
+		error: data.error,
+	}))
+}
 
 export default Error

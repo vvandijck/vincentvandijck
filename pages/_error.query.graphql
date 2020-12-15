@@ -1,0 +1,11 @@
+query Error {
+	error {
+		id
+		seo {
+			description
+			title
+			twitterCard
+		}
+		title
+	}
+}

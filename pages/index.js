@@ -1,9 +1,14 @@
+// Styles
 import '../styles/index.less'
 
 // Core
 import Head from 'next/head'
+
+// Content
+import graphqlQuery from './index.query.graphql'
+
+// Lib
 import fetchContent from '../lib/fetch-content'
-import withCacheControl from '../lib/with-cache-control'
 
 // Components
 import Footer from '../components/footer/footer'
@@ -25,20 +30,10 @@ const Page = ({ home }) => (
 	</React.Fragment>
 )
 
-Page.getInitialProps = withCacheControl(({ req }) => {
-	const graphqlQuery = `{
-		home {
-			id
-			seo {
-				description
-				title
-				twitterCard
-			}
-			title
-		}
-	}`
-
-	return fetchContent({ graphqlQuery, req })
-})
+Page.getInitialProps = async () => {
+	return await fetchContent({ query: graphqlQuery }).then(data => ({
+		home: data.home,
+	}))
+}
 
 export default Page
