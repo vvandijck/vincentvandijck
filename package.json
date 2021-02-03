@@ -41,7 +41,7 @@
 		"stylelint-config-standard": "^20.0.0"
 	},
 	"engines": {
-		"node": "12.19.0"
+		"node": "12.x"
 	},
 	"prettier": {
 		"arrowParens": "avoid",
