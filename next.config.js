@@ -8,25 +8,14 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 
 const config = withLess({
 	// Taken from: https://github.com/developit/nextjs-preact-demo/
-	webpack(config) {
-		const splitChunks = config.optimization && config.optimization.splitChunks
-
-		if (splitChunks) {
-			const cacheGroups = splitChunks.cacheGroups
-			const preactModules = /[\\/]node_modules[\\/](preact|preact-render-to-string|preact-context-provider)[\\/]/
-
-			if (cacheGroups.framework) {
-				cacheGroups.preact = Object.assign({}, cacheGroups.framework, {
-					test: preactModules,
-				})
-				cacheGroups.commons.name = 'framework'
-			} else {
-				cacheGroups.preact = {
-					name: 'commons',
-					chunks: 'all',
-					test: preactModules,
-				}
-			}
+	webpack: (config, { dev, isServer }) => {
+		// Replace React with Preact only in client production build
+		if (!dev && !isServer) {
+			Object.assign(config.resolve.alias, {
+				react: 'preact/compat',
+				'react-dom/test-utils': 'preact/test-utils',
+				'react-dom': 'preact/compat',
+			});
 		}
 
 		config.plugins.push(plugin)
