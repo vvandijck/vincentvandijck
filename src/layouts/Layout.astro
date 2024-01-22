@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="svg/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | vincentvandijck.nl</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: rgb(62, 5, 50);
+    --accent-light: rgb(98, 30, 68);
+    --accent-dark: rgb(24, 0, 19);
+    --text: rgb(255, 255, 255);
+  }
+
+  *,
+  *::before,
+  *::after {
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  html {
+    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-light) 100%);
+  }
+
+  body {
+    margin-inline: 0;
+    margin-block: 0;
+  }
+</style>

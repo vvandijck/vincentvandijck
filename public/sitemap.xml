@@ -4,12 +4,4 @@
   <loc>https://vincentvandijck.nl/</loc>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>https://vincentvandijck.nl/about/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://vincentvandijck.nl/toolbox/</loc>
-  <priority>0.80</priority>
-</url>
 </urlset>

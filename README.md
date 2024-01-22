@@ -1,51 +1,32 @@
-# vincentvandijck
+# Vincentvandijck.nl
 
-Personal website
+Personal website.
 
-## Getting started
+## 🚀 Project Structure
 
-```sh
-$ git clone git@github.com:vvandijck/vvandijck.git
-$ cd vvandijck
-$ yarn install --frozen-lockfile
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-Then copy and rename `.env.example` to `.env` and set the correct credentials.
+## 🧞 Commands
 
-### Local development
+All commands are run from the root of the project, from a terminal:
 
-```sh
-$ yarn dev
-```
-
-### Production build
-
-```sh
-$ yarn build
-$ yarn start
-```
-
-## Deployment
-
-```sh
-$ now --prod
-```
-
-## Scripts
-
-This project requires [Node.js](http://nodejs.org/) (>= v8) and
-[npm](https://npmjs.org/) (comes with Node).
-
-After installing dependencies using `npm install` the following scripts are
-available:
-
-`yarn ...` | Description
----|---
-`build` | Create production build.
-`dev` | Creates development build and serves app on [`http://localhost:3000`](http://localhost:3000), with hot reloading, for local development.
-`lint` | Lints `.js` and `.less` files for any errors or warnings.
-`format` | Fixes any errors or warnings in `.js` and `.less` files.
-
-## Useful links
-
-* [Local environment](http://localhost:3000)
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
